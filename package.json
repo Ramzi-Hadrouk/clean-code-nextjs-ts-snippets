@@ -1,0 +1,25 @@
+{
+  "name": "clean-code-nextjs-ts-snippets",
+  "displayName": "CleanCode Next.js TS Snippets",
+  "description": "Customizable Next.js snippet extension for clean code",
+  "version": "0.0.1",
+  "publisher": "Ramzi-Hadrouk",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/nextjs-snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/nextjs-snippets.json"
+      }
+    ]
+  }
+}
