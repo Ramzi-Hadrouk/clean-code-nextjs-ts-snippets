@@ -83,7 +83,14 @@ export function Component({ className }: ComponentProps) {
 ## Contributing
 
 Feel free to tweak the snippet file in `snippets/nextjs-snippets.json`.
-
+```
+├── package.json
+├── snippets/
+│    └── nextjs-snippets.json
+│── images/
+│     └── icon.png
+└── README.md
+```
 **To install locally:** in VS Code press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, choose **Developer: Load Extension From Folder**, and pick this project root.
 
 Enjoy your clean-code boilerplate workflow! 🚀
