@@ -1,6 +1,6 @@
 {
-  "CleanCode Next.js Function Component Client": {
-    "prefix": "nfcc",
+  " Ts Client Component": {
+    "prefix": "nx_client",
     "body": [
       "'use client';",
       "",
@@ -31,8 +31,8 @@
     ],
     "description": "CleanCode Next.js client component scaffold"
   },
-  "CleanCode Next.js Function Component Server": {
-    "prefix": "nfcs",
+  "Ts Server Component ": {
+    "prefix": "nx_server",
     "body": [
       "// ─────────────────── Imports ───────────────────",
       "import { cn } from \"@/lib/utils\";",
@@ -60,5 +60,36 @@
       "}"
     ],
     "description": "CleanCode Next.js server component scaffold"
-  }
+  } ,
+  "Ts Fetch Function": {
+    "prefix": "nx_fetch",
+    "body": [
+      "//---Fetch Data---",
+      "async function fetchData<T>(url: string): Promise<T> {",
+      "  try {",
+      "    const response = await fetch(url);",
+      "    if (!response.ok) {",
+      "      throw new Error(`HTTP error! status: ${response.status}`);",
+      "    }",
+      "    const data: T = await response.json();",
+      "    return data;",
+      "  } catch (error) {",
+      "    console.error(\"Error fetching data:\", error);",
+      "    throw error; // Re-throw the error or handle it as needed",
+      "  }",
+      "}",
+      "",
+      "$0"
+    ],
+    "description": "Fetches data from a URL and parses as JSON with TypeScript typing, includes basic error handling."
+  },
+   "Ts useState": {
+    "prefix": "nx_useState",
+    "body": [
+      "// NOTE: Remember to add 'import { useState } from 'react';' at the top of your file",
+      "const [${1:dataState}, set${1/(.*)/${1:/capitalize}/}] = useState<any>(/*${2:initialValue}*/);", // Modified line
+      "$0"
+    ],
+    "description": "React useState hook with TypeScript (defaults to any type)."
+  },
 }
