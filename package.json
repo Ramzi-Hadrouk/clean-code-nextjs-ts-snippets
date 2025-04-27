@@ -2,7 +2,7 @@
   "name": "clean-code-nextjs-ts-snippets",
   "displayName": "CleanCode Next.js TS Snippets",
   "description": "Customizable Next.js snippet extension for clean code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "Ramzi-Hadrouk",
   "engines": {
     "vscode": "^1.50.0"
